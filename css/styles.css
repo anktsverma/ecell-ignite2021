@@ -1,0 +1,615 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+}
+h1{font-family: 'Squada One', cursive;font-size: 3rem;}
+h2{ font-family: 'Montserrat', sans-serif;font-size: 1.3rem;color:#050302;}
+h3{ font-family: 'Montserrat', sans-serif;font-size: 1rem;}
+h5{ font-family: 'Montserrat', sans-serif;font-size: 1rem;color:#fff}
+p{ font-family: 'Montserrat', sans-serif;font-size: 1rem;color:#050302;}
+li{font-family: 'Montserrat', sans-serif;font-size: 1rem;color:#FF9F55;}
+
+
+
+
+body {
+    
+    font-family: Helvetica, sans-serif;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timebday{
+    background-color: #474e5d;
+  }
+  .timeline {
+    
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container1 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    margin:0px !important;
+  }
+  
+  /* The circles on the timeline */
+  .container1::after {
+    content: '';
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+ .contacte{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+ 
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container1 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container1::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+        .banner{
+            /* background-image: url(../images/banner.png); */
+            background-color: #000;
+            height: 85vh;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        .logo1{
+            width: 180px;
+            height: 150px;
+        }
+        .navbar{
+            padding: 20px;
+        }
+        .bannercon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .bannercon3{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        
+        }
+        .bannercon1 h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            text-transform: uppercase;
+            color:#fff;
+        }
+        .bannercon2 h1{
+            font-family: 'Squada One', cursive;
+            font-size: 10rem;
+            text-transform: uppercase;
+            color:#fadc63;
+            border-top:solid .3rem #fff;
+            border-bottom:solid .3rem #fff;
+
+        }
+        .bannersubcon1 h2{
+            font-family: 'Saira Condensed', sans-serif;
+            font-size: 5.6rem;
+            color:#fff;
+            text-transform: uppercase;
+            margin-right: 20px;
+        }
+        .bannersubcon2 div{
+            font-family: 'Montserrat', sans-serif;
+            color:#fff;
+            text-transform: uppercase;
+        }
+       .ani{
+        position:absolute;top:0px;left:0px;width:100%;height:85vh
+       }
+
+        .about{
+            background-image: url('../images/banner1.png');
+            background-size: cover;
+        }
+        .aboutcon{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+           
+        }
+        
+        .aboutcon1 h1{
+            font-size: 3rem;
+            margin-bottom: 2px;
+            color:#9f4700;
+        }
+        .aboutcon2 h2{
+            font-size: 1.3rem;
+        }
+        .aboutcon3 p{
+            line-height: 2rem;
+            
+            flex-wrap: wrap;
+        }
+        .theme{
+            background-image: url(../images/banner2.png);
+            background-size: cover;
+            display: flex;
+            
+        }
+        .themecon{
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items:flex-end;
+            
+        }
+        .themecon3 p{
+            flex-wrap: wrap;
+            line-height: 1.5rem;
+            
+        }
+        
+        .workshop{
+            background-image: url(../images/banner3.png);
+            background-size: cover;
+        }
+        .workshopcon{
+            width:80%;
+            padding:40px;
+        }
+        .competition{
+            /* background-image: url(../images/banner1.png); */
+            background-color: #fff;
+            background-size: cover;
+        }
+        .competitioncon{
+            width:80%;
+            padding:40px;
+        }
+        .aboutcompetition{
+            background-image: url(../images/banner5.png);
+            background-size: cover;
+        }
+        .aboutcompetitioncon{
+            padding:40px;
+        }
+        .aboutcompetitioncon1,.aboutcompetitioncon2{
+            border-right:dotted 2px #fff;
+            border-left:dotted 2px #fff;
+            padding:20px;
+            margin:0px;
+            border-radius:10%;
+        }
+        
+        .guests{
+            background-image: url(../images/banner6.png);
+            background-size: cover;
+        }
+        .guestscon {
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width:80%;
+            margin:0px auto;
+            justify-content: space-evenly;
+            text-align: center;
+            padding:40px;
+            
+        }
+       
+        .guest1{
+            background-image: url(../images/banner7.png);
+            background-size: cover;
+        }
+        .guest2{
+            background-image: url(../images/banner3.png);
+            background-size: cover;
+        }
+        .guestscon1,.guestscon2,.guestscon3,.guestscon4,.guestscon5,.guestscon6,.guestscon7{
+            padding:20px;
+            border:solid 1px #fadc63;
+        }
+       .guestscon img{
+           border-radius:50%;
+           height:250px;
+           width:250px;
+           margin-bottom: 20px;
+       }
+       .guestcontainer{
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           width:90%;
+           margin:0px auto;
+           padding:40px;
+       }
+       .guest1cona{
+           display: flex;
+           flex-direction: column;
+       }
+       .guest1conb img{
+           width:250px;
+           height:250px;
+           border-radius: 50%;
+           
+       }
+       .speaker{
+        background-image: url(../images/banner9.png);
+            background-size: cover;
+       }
+       .speakercon2{
+           display: flex;
+           flex-direction:row;
+           width:100%;
+           margin:0px auto;
+           padding:40px;
+           justify-content: space-evenly;
+           }
+       
+       .title{
+           text-align: center;
+           padding:30px 0px 0px 0px;
+       }
+       .hover:hover{
+           border:solid 1px #fadc63;
+        box-shadow: 8px 8px 15px 0px #9f4700;
+
+       }
+
+       .bannercon4{
+            display: flex;
+            width:100%;
+            flex-direction: row;
+            justify-content:center;
+            background-color: #000;
+            padding:20px 0px;
+
+        }
+       .btn{
+           padding:10px;
+           background:transparent;
+           color:#fff;
+           border:solid 1px #fff;
+           border-radius:10px;
+           cursor:pointer;
+           margin:10px 10px;
+           font-weight: bolder;
+       }
+       .btn:hover{
+        background:#fadc63;
+        border:solid 1px transparent;
+        transition: 1s;
+        border:solid 1px dodgerblue;
+        box-shadow: 0px 0px 20px #fadc63;
+       }
+   
+       .overlaya{
+           font-size: 1rem;
+
+       }
+       .footercustom{
+           background-color: #fadc63;
+           width:100%;
+           display: flex;
+           flex-direction: column;
+           /* align-items: center; */
+           padding:40px;
+           /* color:#fadc63 !important; */
+       }
+       .footercustom p{color:#333}
+       .footercustom a{
+           color:#333;
+       }
+       .footercustom a:hover{
+           color:dodgerblue;
+       }
+       .speakercon2a,.speakercon2b{
+        border-right:dotted 2px #fff;
+            border-left:dotted 2px #fff;
+            border-radius: 10%;
+            padding:15px;
+       }
+      .contacte{
+        display:flex;flex-direction: row;justify-content: space-around;text-align: center;
+      }
+
+       @media screen and (max-width: 600px){
+           .contacte{
+               flex-direction: column;
+              margin-left: 40px;
+              
+           }
+           .footercustom{
+               align-items: center;
+           }
+           .logo1{
+               height:80px;
+               width:100px ;
+           }
+           .iic{
+            height:100px;
+            width:100px ;
+           }
+           p{text-align: justify;}
+           br{display: none;}
+           .bannercon{
+               margin:20px;
+           }
+          
+    .bannercon2 h1{
+        font-size: 4rem !important;
+        border-top:solid 0.2rem #fff;
+        border-bottom:solid 0.2rem #fff;
+    }
+    .bannercon1 h2{
+        font-size: 1.1rem !important;
+    }
+    .bannersubcon1 h2{
+        font-size: 4rem;
+    }
+    .bannersubcon2 {
+        font-size: 0.6rem;
+    }
+    .bannercon4{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0px;
+       
+    }
+    .guestcontainer{
+           display: flex;
+           flex-direction:column-reverse;
+           align-items: center;
+           width:90%;
+           margin:0px auto;
+           padding:40px;
+           text-align: center;
+       }
+       .themecon{
+           align-items:center;
+       }
+       .workshopcon {
+    width: 100%;
+    
+}
+.competitioncon {
+    width: 100%;
+   
+}
+.guestscon p{
+    text-align: center !important;
+}
+.footercustom p,.footercustom h3{
+    font-size: .6rem;
+}
+.footercustom a:visited{
+    color: #333;
+}
+.address{
+    display: none;
+}
+.footercustom a:hover{
+    color:#333;
+}
+
+.banner{
+    height: 60vh;
+}
+.ani{
+    height: 60vh;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
